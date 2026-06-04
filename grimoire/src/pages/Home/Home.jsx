@@ -8,6 +8,7 @@ const sections = [
   { to: '/tarot',       label: 'Tarot',         icon: '🃏', desc: 'Draw and interpret tarot cards' },
   { to: '/Research',    label: 'Research',      icon: '🔮', desc: 'Explore witchy knowledge' },
   { to: '/Sigils',      label: 'Sigils',        icon: '✦',  desc: 'Create and store your sigils' },
+  {to: '/Spells', label: 'Spells', icon: '🪄', desc: 'Create and store your spells' }
 ]
 
 function Home() {

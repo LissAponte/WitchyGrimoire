@@ -8,6 +8,7 @@ import Moon        from './pages/Moon/Moon'
 import Tarot       from './pages/Tarot/Tarot'
 import Research    from './pages/Research/Research'
 import Sigils      from './pages/Sigils/Sigils'
+import Spells      from './pages/Spells/Spells'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <li><NavLink to="/tarot"           className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Tarot</NavLink></li>
               <li><NavLink to="/Research"        className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Research</NavLink></li>
               <li><NavLink to="/Sigils"          className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Sigils</NavLink></li>
+              <li><NavLink to="/Spells"          className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Spells</NavLink></li>
             </ul>
           </nav>
         </header>
@@ -37,6 +39,7 @@ function App() {
             <Route path="/tarot"       element={<Tarot />} />
             <Route path="/Research"    element={<Research />} />
             <Route path="/Sigils"      element={<Sigils />} />
+            <Route path="/Spells"      element={<Spells />} />  
           </Routes>
         </main>
       </div>
