@@ -6,6 +6,8 @@ import Grimoire    from './pages/Grimoire/Grimoire'
 import Ingredients from './pages/Ingredients/Ingredients'
 import Moon        from './pages/Moon/Moon'
 import Tarot       from './pages/Tarot/Tarot'
+import Research    from './pages/Research/Research'
+import Sigils      from './pages/Sigils/Sigils'
 
 function App() {
   return (
@@ -17,10 +19,11 @@ function App() {
             <ul className="nav">
               <li><NavLink to="/"            end className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Home</NavLink></li>
               <li><NavLink to="/grimoire"        className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Spell Book</NavLink></li>
-              <li><NavLink to="/ingredients"     className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Correspondences</NavLink></li>
+              <li><NavLink to="/ingredients"     className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Ingredients</NavLink></li>
               <li><NavLink to="/moon"            className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Moon</NavLink></li>
               <li><NavLink to="/tarot"           className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Tarot</NavLink></li>
               <li><NavLink to="/Research"        className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Research</NavLink></li>
+              <li><NavLink to="/Sigils"          className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Sigils</NavLink></li>
             </ul>
           </nav>
         </header>
@@ -32,6 +35,8 @@ function App() {
             <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/moon"        element={<Moon />} />
             <Route path="/tarot"       element={<Tarot />} />
+            <Route path="/Research"    element={<Research />} />
+            <Route path="/Sigils"      element={<Sigils />} />
           </Routes>
         </main>
       </div>
