@@ -1,0 +1,11 @@
+.home-page {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.home-title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+}

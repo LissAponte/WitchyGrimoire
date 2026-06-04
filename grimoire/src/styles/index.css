@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #5C4A2A;
+  --color-secondary: #7A6B47;
+  --color-background: #F5EFE0;
+  --color-surface: #EDE4CE;
+  --color-text-primary: #2C2010;
+  --color-appbar-background: #3D2E14;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: serif;
+}
