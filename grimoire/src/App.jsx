@@ -20,6 +20,7 @@ function App() {
               <li><NavLink to="/ingredients"     className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Correspondences</NavLink></li>
               <li><NavLink to="/moon"            className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Moon</NavLink></li>
               <li><NavLink to="/tarot"           className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Tarot</NavLink></li>
+              <li><NavLink to="/Research"        className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}>Research</NavLink></li>
             </ul>
           </nav>
         </header>
