@@ -6,7 +6,7 @@ function Spells() {
     <div className="spell-page">
       <h1 className="heading-xl">Spells</h1>
       <p className="text-muted">Explore magical topics, traditions, history, and deepen your practice.</p>
-      <NotesList storageKey="notes-spells" />
+      <NotesList section="spells" />
     </div>
   )
 }

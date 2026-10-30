@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { useNotes } from '../../hooks/useNotes'
 import './NotesList.css'
 
-function NotesList({ storageKey }) {
-  const { notes, addNote, deleteNote } = useNotes(storageKey)
+function NotesList({ section }) {
+  const { notes, error, addNote, deleteNote } = useNotes(section)
   const [title, setTitle] = useState('')
   const [body, setBody]   = useState('')
 
@@ -38,6 +38,8 @@ function NotesList({ storageKey }) {
           Add Note
         </button>
       </form>
+
+      {error && <p className="notes-error" role="alert">{error}</p>}
 
       {notes.length === 0 ? (
         <p className="empty-state">No notes yet. Add one above.</p>

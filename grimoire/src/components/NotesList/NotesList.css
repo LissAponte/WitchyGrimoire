@@ -66,3 +66,8 @@
   line-height: 1.6;
   color: var(--color-text-primary);
 }
+
+.notes-error {
+  color: var(--color-danger);
+  margin-bottom: var(--spacing-md);
+}

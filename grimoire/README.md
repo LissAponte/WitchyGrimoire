@@ -1,4 +1,41 @@
-# React + Vite
+# Grimoire
+
+## Running locally
+
+Notes are saved to a local PostgreSQL database through a small Express API in `server/`.
+Vite proxies `/api` requests to it during development.
+
+1. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+2. Start Postgres. Either use your own install and create a database (`createdb grimoire`),
+   or start one in Docker:
+
+   ```sh
+   npm run db:up
+   ```
+
+3. Configure the connection:
+
+   ```sh
+   cp .env.example .env
+   ```
+
+   Edit `DATABASE_URL` if your Postgres user, password or database differ.
+
+4. Start the API and the web app together:
+
+   ```sh
+   npm run dev
+   ```
+
+   The app is at http://localhost:5173 and the API at http://localhost:3001.
+   The `notes` table is created automatically on first start (`server/schema.sql`).
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

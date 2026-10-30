@@ -6,7 +6,7 @@ function Research() {
     <div className="research-page">
       <h1 className="heading-xl">Research</h1>
       <p className="text-muted">Explore magical topics, traditions, history, and deepen your practice.</p>
-      <NotesList storageKey="notes-research" />
+      <NotesList section="research" />
     </div>
   )
 }
