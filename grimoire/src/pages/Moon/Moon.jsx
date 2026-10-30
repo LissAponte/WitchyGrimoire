@@ -37,7 +37,7 @@ function Moon() {
       </div>
 
       <p className="text-muted">Track moon phases, log intentions, and reflect on your lunar cycle.</p>
-      <NotesList storageKey="notes-moon" />
+      <NotesList section="moon" />
     </div>
   )
 }
